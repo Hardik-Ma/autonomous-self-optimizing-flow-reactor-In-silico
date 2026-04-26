@@ -1,0 +1,549 @@
+
+ TSEMO log file created on 20-Apr-2026 
+
+ This file shows the initial specifications of TSEMO and logs the output.
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ License information 
+
+ BSD 2-Clause License 
+
+ Copyright (c) 2017, Eric Bradford, Artur M. Schweidtmann and Alexei Lapkin
+ All rights reserved. 
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met: 
+
+ *Redistributions of source code must retain the above copyright notice, this   
+  list of conditions and the following disclaimer. 
+
+ *Redistributions in binary form must reproduce the above copyright notice,   
+  this list of conditions and the following disclaimer in the documentation   
+  and/or other materials provided with the distribution. 
+
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ Problem specifications 
+
+ Function used:   @(x)f_PFR_2nd_order(x,c1_0,c2_0) 
+
+ Number of inputs:   2
+ Number of outputs:  2 
+
+ Lower bounds of decision variables:
+      x1      x2
+  0.2500 30.0000
+ 
+ Upper bounds of decision variables:
+      x1      x2
+  2.0000 50.0000
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ Algorithm options 
+
+ Maximum number of function evaluations:  10
+ Sample batch size:                       1
+ Number of algorithm iterations:          10 
+
+ Genetic algorithm population size:        100
+ Genetic algorithm number of generations:  100 
+
+                                               f1      f2
+ Number of spectral sampling points:         4000    4000
+ Type of matern function:                       1       1
+ Direct evaluations per input dimension:      200     200
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ Initial data set 
+
+ Number of initial data points:  4 
+
+ Initial input data matrix:
+      x1      x2
+  1.1142 30.6556
+  1.8910 36.4339
+  0.5652 40.9785
+  1.4429 46.8573
+
+ Initial output data matrix:
+      f1      f2
+  1.1624  0.0438
+  1.3691  0.0475
+  0.6179  0.0444
+  1.0538  0.0498
+
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ Algorithm iteration 1 
+
+ Predicted hypervolume improvement:    1.4607
+ Time taken:  1158.0632 
+
+ Proposed evaluation point(s): 
+      x1      x2
+  0.6636 35.5844
+
+ Corresponding observation(s): 
+      f1      f2
+  0.8143  0.0436
+
+ Current hyperparameter values: 
+  Hyperparameter      f1      f2
+         lambda1  0.1586  0.1350
+         lambda2  0.0299  0.0194
+          sigmaf  0.2696  0.0024
+          sigman  0.0007  0.0000
+
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ Algorithm iteration 2 
+
+ Predicted hypervolume improvement:    1.1951
+ Time taken:  1173.1831 
+
+ Proposed evaluation point(s): 
+      x1      x2
+  0.3681 42.7779
+
+ Corresponding observation(s): 
+      f1      f2
+  0.4089  0.0438
+
+ Current hyperparameter values: 
+  Hyperparameter      f1      f2
+         lambda1  0.2464  0.2528
+         lambda2  0.0637  0.0374
+          sigmaf  0.3493  0.0025
+          sigman  0.0009  0.0000
+
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ Algorithm iteration 3 
+
+ Predicted hypervolume improvement:    0.2979
+ Time taken:  1188.6194 
+
+ Proposed evaluation point(s): 
+      x1      x2
+  0.2508 48.7776
+
+ Corresponding observation(s): 
+      f1      f2
+  0.1250  0.0441
+
+ Current hyperparameter values: 
+  Hyperparameter      f1      f2
+         lambda1  0.4581  0.3774
+         lambda2  0.1070  0.0514
+          sigmaf  0.4610  0.0025
+          sigman  0.0011  0.0000
+
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ Algorithm iteration 4 
+
+ Predicted hypervolume improvement:    1.0297
+ Time taken:  1202.7807 
+
+ Proposed evaluation point(s): 
+      x1      x2
+  0.3376 35.7470
+
+ Corresponding observation(s): 
+      f1      f2
+  0.5844  0.0423
+
+ Current hyperparameter values: 
+  Hyperparameter      f1      f2
+         lambda1  0.6320  0.3915
+         lambda2  0.1552  0.0643
+          sigmaf  0.4545  0.0027
+          sigman  0.0010  0.0000
+
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ Algorithm iteration 5 
+
+ Predicted hypervolume improvement:    0.0623
+ Time taken:  1217.4846 
+
+ Proposed evaluation point(s): 
+      x1      x2
+  0.2500 30.0962
+
+ Corresponding observation(s): 
+      f1      f2
+  0.7098  0.0411
+
+ Current hyperparameter values: 
+  Hyperparameter      f1      f2
+         lambda1  0.7517  0.6225
+         lambda2  0.1743  0.0892
+          sigmaf  0.4475  0.0031
+          sigman  0.0010  0.0000
+
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ Algorithm iteration 6 
+
+ Predicted hypervolume improvement:    0.6041
+ Time taken:  1231.3870 
+
+ Proposed evaluation point(s): 
+      x1      x2
+  0.2537 38.8401
+
+ Corresponding observation(s): 
+      f1      f2
+  0.4171  0.0424
+
+ Current hyperparameter values: 
+  Hyperparameter      f1      f2
+         lambda1  0.8356  0.8541
+         lambda2  0.1849  0.1271
+          sigmaf  0.4618  0.0032
+          sigman  0.0009  0.0000
+
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ Algorithm iteration 7 
+
+ Predicted hypervolume improvement:    0.2996
+ Time taken:  1245.2050 
+
+ Proposed evaluation point(s): 
+      x1      x2
+  0.2536 31.7696
+
+ Corresponding observation(s): 
+      f1      f2
+  0.6527  0.0413
+
+ Current hyperparameter values: 
+  Hyperparameter      f1      f2
+         lambda1  0.9584  0.9789
+         lambda2  0.2208  0.1525
+          sigmaf  0.4537  0.0034
+          sigman  0.0009  0.0000
+
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ Algorithm iteration 8 
+
+ Predicted hypervolume improvement:    0.2569
+ Time taken:  1258.8884 
+
+ Proposed evaluation point(s): 
+      x1      x2
+  0.2522 40.2741
+
+ Corresponding observation(s): 
+      f1      f2
+  0.3709  0.0427
+
+ Current hyperparameter values: 
+  Hyperparameter      f1      f2
+         lambda1  1.0281  1.0900
+         lambda2  0.2597  0.1832
+          sigmaf  0.4734  0.0033
+          sigman  0.0009  0.0000
+
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ Algorithm iteration 9 
+
+ Predicted hypervolume improvement:    0.9238
+ Time taken:  1272.9738 
+
+ Proposed evaluation point(s): 
+      x1      x2
+  0.2503 45.4388
+
+ Corresponding observation(s): 
+      f1      f2
+  0.2162  0.0435
+
+ Current hyperparameter values: 
+  Hyperparameter      f1      f2
+         lambda1  1.1200  1.1824
+         lambda2  0.3047  0.2103
+          sigmaf  0.4933  0.0033
+          sigman  0.0009  0.0000
+
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ Algorithm iteration 10 
+
+ Predicted hypervolume improvement:    0.2664
+ Time taken:  1286.4596 
+
+ Proposed evaluation point(s): 
+      x1      x2
+  0.2500 35.5576
+
+ Corresponding observation(s): 
+      f1      f2
+  0.5203  0.0419
+
+ Current hyperparameter values: 
+  Hyperparameter      f1      f2
+         lambda1  1.2216  1.2494
+         lambda2  0.3569  0.2356
+          sigmaf  0.4722  0.0034
+          sigman  0.0009  0.0000
+
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ Final algorithm output 
+
+ Final input data matrix:
+      x1      x2
+  1.1142 30.6556
+  1.8910 36.4339
+  0.5652 40.9785
+  1.4429 46.8573
+  0.6636 35.5844
+  0.3681 42.7779
+  0.2508 48.7776
+  0.3376 35.7470
+  0.2500 30.0962
+  0.2537 38.8401
+  0.2536 31.7696
+  0.2522 40.2741
+  0.2503 45.4388
+  0.2500 35.5576
+
+ Final output data matrix:
+      f1      f2
+  1.1624  0.0438
+  1.3691  0.0475
+  0.6179  0.0444
+  1.0538  0.0498
+  0.8143  0.0436
+  0.4089  0.0438
+  0.1250  0.0441
+  0.5844  0.0423
+  0.7098  0.0411
+  0.4171  0.0424
+  0.6527  0.0413
+  0.3709  0.0427
+  0.2162  0.0435
+  0.5203  0.0419
+
+ Input data matrix of corresponding Pareto front:
+      x1      x2
+  0.2508 48.7776
+  0.2500 30.0962
+  0.2537 38.8401
+  0.2536 31.7696
+  0.2522 40.2741
+  0.2503 45.4388
+  0.2500 35.5576
+
+ Output data matrix of corresponding Pareto front:
+      f1      f2
+  0.1250  0.0441
+  0.7098  0.0411
+  0.4171  0.0424
+  0.6527  0.0413
+  0.3709  0.0427
+  0.2162  0.0435
+  0.5203  0.0419
+
+ Input data matrix of Pareto front of final Gaussian process model:
+      x1      x2
+  0.2516 30.0000
+  0.2500 48.8872
+  0.2500 46.9656
+  0.2500 44.8935
+  0.2500 44.6889
+  0.2500 48.2054
+  0.2519 45.8665
+  0.2500 36.2699
+  0.2500 32.9335
+  0.2500 39.3299
+  0.2500 33.6561
+  0.2500 34.7251
+  0.2500 48.7653
+  0.2500 46.3348
+  0.2509 30.7511
+  0.2500 33.4182
+  0.2547 43.0099
+  0.2500 34.3814
+  0.2500 41.8836
+  0.2500 46.5354
+  0.2500 38.9404
+  0.2500 30.8847
+  0.2500 48.1057
+  0.2500 45.4802
+  0.2500 42.6240
+  0.2500 36.0248
+  0.2500 30.5577
+  0.2500 31.0468
+  0.2500 32.0684
+  0.2500 38.4012
+  0.2500 47.6803
+  0.2500 46.7768
+  0.2500 31.2601
+  0.2500 31.8909
+  0.2500 34.2099
+  0.2500 31.6444
+  0.2500 44.5160
+  0.2500 32.3493
+  0.2500 46.6714
+  0.2500 32.6001
+  0.2500 41.1075
+  0.2500 44.3868
+  0.2500 44.1420
+  0.2500 31.4705
+  0.2500 39.9018
+  0.2500 42.3101
+  0.2500 45.1366
+  0.2500 41.5320
+  0.2500 40.4842
+  0.2500 45.9627
+  0.2500 38.0832
+  0.2500 35.5210
+  0.2500 43.9436
+  0.2500 36.7575
+  0.2500 30.0187
+  0.2500 40.9675
+  0.2500 35.8287
+  0.2500 43.3944
+  0.2500 47.6853
+  0.2540 40.3936
+  0.2500 41.3549
+  0.2500 40.8696
+  0.2500 40.0019
+  0.2500 33.9783
+  0.2552 37.6488
+  0.2500 43.1255
+  0.2500 43.5044
+  0.2516 32.2511
+  0.2500 36.4788
+  0.2500 32.5821
+  0.2503 35.1514
+  0.2500 33.8884
+  0.2500 40.1373
+  0.2500 42.0890
+  0.2500 39.7306
+  0.2500 42.4484
+  0.2500 37.2455
+  0.2500 46.1422
+  0.2500 34.2898
+  0.2500 37.8414
+  0.2500 36.9370
+  0.2500 30.4316
+  0.2500 43.0545
+  0.2500 35.6863
+  0.2500 34.8705
+  0.2500 46.2421
+  0.2500 35.1037
+  0.2500 30.3885
+  0.2500 38.5549
+  0.2500 46.2348
+  0.2500 46.0955
+  0.2500 34.8394
+  0.2500 39.4933
+  0.2500 40.6328
+  0.2500 42.5313
+  0.2500 37.8222
+  0.2500 40.5953
+  0.2537 41.9771
+  0.2500 39.6893
+  0.2500 33.1989
+
+ Output data matrix of Pareto front of final Gaussian process model:
+      f1      f2
+  0.7116  0.0410
+  0.1214  0.0442
+  0.1749  0.0440
+  0.2269  0.0435
+  0.2390  0.0434
+  0.1500  0.0441
+  0.2147  0.0437
+  0.5013  0.0420
+  0.5988  0.0415
+  0.3979  0.0425
+  0.5813  0.0416
+  0.5387  0.0418
+  0.1263  0.0441
+  0.1983  0.0438
+  0.6789  0.0411
+  0.5855  0.0415
+  0.2822  0.0432
+  0.5522  0.0417
+  0.3253  0.0430
+  0.1874  0.0439
+  0.4113  0.0425
+  0.6688  0.0411
+  0.1567  0.0441
+  0.2153  0.0435
+  0.2972  0.0431
+  0.5098  0.0420
+  0.6874  0.0411
+  0.6654  0.0412
+  0.6379  0.0414
+  0.4360  0.0424
+  0.1747  0.0441
+  0.1798  0.0440
+  0.6591  0.0412
+  0.6421  0.0413
+  0.5615  0.0417
+  0.6519  0.0413
+  0.2435  0.0434
+  0.6239  0.0414
+  0.1841  0.0439
+  0.6123  0.0414
+  0.3469  0.0429
+  0.2521  0.0434
+  0.2593  0.0433
+  0.6542  0.0412
+  0.3808  0.0426
+  0.3102  0.0431
+  0.2194  0.0435
+  0.3355  0.0429
+  0.3628  0.0427
+  0.2115  0.0437
+  0.4484  0.0423
+  0.5210  0.0419
+  0.2616  0.0433
+  0.4847  0.0421
+  0.7079  0.0410
+  0.3521  0.0428
+  0.5116  0.0420
+  0.2687  0.0432
+  0.1741  0.0441
+  0.3682  0.0427
+  0.3421  0.0429
+  0.3549  0.0428
+  0.3764  0.0426
+  0.5711  0.0416
+  0.4669  0.0423
+  0.2719  0.0432
+  0.2638  0.0432
+  0.6312  0.0414
+  0.4976  0.0421
+  0.6141  0.0414
+  0.5260  0.0418
+  0.5731  0.0416
+  0.3718  0.0427
+  0.3185  0.0431
+  0.3857  0.0426
+  0.3040  0.0431
+  0.4721  0.0422
+  0.2078  0.0438
+  0.5557  0.0417
+  0.4574  0.0423
+  0.4787  0.0422
+  0.6952  0.0410
+  0.2770  0.0432
+  0.5149  0.0419
+  0.5327  0.0418
+  0.2033  0.0438
+  0.5275  0.0418
+  0.6973  0.0410
+  0.4266  0.0424
+  0.2048  0.0438
+  0.2088  0.0437
+  0.5361  0.0418
+  0.3954  0.0426
+  0.3580  0.0428
+  0.3013  0.0431
+  0.4603  0.0423
+  0.3606  0.0428
+  0.3230  0.0430
+  0.3878  0.0426
+  0.5928  0.0415
+
+ Final hyperparameter values: 
+  Hyperparameter      f1      f2
+         lambda1  3.9983  4.2616
+         lambda2158.6427103.9681
+          sigmaf  0.4898  0.0034
+          sigman  0.0009  0.0000
